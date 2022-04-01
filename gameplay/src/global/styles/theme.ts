@@ -2,7 +2,10 @@ import { StyleSheet } from "react-native"
 
 
 export  const  theme = {
-    color:{
-        background: '#0d133d'
+    colors:{
+        background: '#0d133d',
+        heading: "#dee3f0",
+        primary: "#e51c44",
+        line: "#991f36"
     }
 }

@@ -6,13 +6,29 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         flex: 1,
-        backgroundColor: theme.color.background
+        backgroundColor: theme.colors.background
      
     },
-    input :{
-        width: 200,
-        height: 30,
-        borderBottomWidth: 2
+    content:{
+        paddingHorizontal: 50,
+        marginTop: -40,
+    },
+    image: {
+        width: '100%',
+        height: 360,
+    },
+    title: {
+        color: theme.colors.heading,
+        textAlign: 'center',
+        fontSize: 40,
+     
+        
+    },
+    subtitle:{
+        color: theme.colors.heading,
+        fontSize: 15,
+        textAlign: 'center',
+        marginBottom: 60
     }
     
 })
