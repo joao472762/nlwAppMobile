@@ -1,12 +1,21 @@
 
-import React, { useState } from "react";
 import { Text, View, Image, StatusBar} from "react-native";
-
-import ilustration from "../../../assets/illustration.png"
+import ilustration from "../../assets/illustration.png"
 import { ButtonIcon } from "../../components/buttonIcon";
+import React, { useState } from "react";
 import { styles } from "./style";
-export  function SignIn(){
+import { useNavigation } from "@react-navigation/native";
+import { propsStack } from "../../routes/models";
 
+
+export  function SignIn(){
+    const navigation = useNavigation<propsStack>();
+
+    function handleGoToHome(){
+        navigation.navigate('Home')
+    }
+
+   
     return(
         <View style={styles.container} >
             <StatusBar 
@@ -31,7 +40,7 @@ export  function SignIn(){
                     Crie grupos para jogar seus games{'\n'}
                     favoritos com seus amigos
                 </Text>
-                <ButtonIcon title="Entrar como Dicord" activeOpacity={.7}/>
+                <ButtonIcon title="Entrar como Dicord"  onPress={()=> handleGoToHome()}/>
             </View>
             
         </View>
