@@ -1,8 +1,9 @@
 import React from "react";
-import { styles } from "./style";
 import{   View,Image,Text, } from 'react-native'
-import dicordIcon from '../../assets/discord.png'
 import {RectButton, RectButtonProps}  from "react-native-gesture-handler"
+
+import { styles } from "./style";
+import dicordIcon from '../../assets/discord.png'
 
 //here you can use interface or type
 type ButtonProps   = RectButtonProps &{

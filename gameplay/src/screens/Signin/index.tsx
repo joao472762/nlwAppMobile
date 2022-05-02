@@ -1,11 +1,11 @@
 
-import { Text, View, Image, StatusBar} from "react-native";
+import { useNavigation } from "@react-navigation/native";
+import { Text, View, Image, StatusBar} from "react-native"
+;
+import { styles } from "./style";
+import { propsStack } from "../../routes/models";
 import ilustration from "../../assets/illustration.png"
 import { ButtonIcon } from "../../components/buttonIcon";
-import React, { useState } from "react";
-import { styles } from "./style";
-import { useNavigation } from "@react-navigation/native";
-import { propsStack } from "../../routes/models";
 
 
 export  function SignIn(){

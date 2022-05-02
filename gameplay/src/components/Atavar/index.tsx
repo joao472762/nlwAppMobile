@@ -1,7 +1,8 @@
 import React from "react";
-import { style } from "./style";
 import { Image, View } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
+
+import { style } from "./style";
 import { theme } from "../../global/styles/theme";
 
 type avatarProps = {

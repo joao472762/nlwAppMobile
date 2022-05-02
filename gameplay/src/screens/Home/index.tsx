@@ -1,6 +1,7 @@
 import React from "react";
-import { styles } from "./style";
 import { View, Text } from "react-native";
+
+import { styles } from "./style";
 import { Profile } from "../../components/Profile";
 import { ButtonAdd } from "../../components/ButtonAdd";
 import { CategorySelect } from "../../components/CategorySelect";
@@ -11,9 +12,9 @@ export function Home(){
             <View style={styles.header}>
                 <Profile/>
                 <ButtonAdd/>   
-            </View>
+            </View> 
             <View>
-                <CategorySelect/>  
+                <CategorySelect/>
             </View>
             
         </View>

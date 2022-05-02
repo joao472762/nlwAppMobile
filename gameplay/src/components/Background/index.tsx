@@ -1,7 +1,10 @@
 import React, {ReactNode} from "react";
 import {LinearGradient} from "expo-linear-gradient"
+
 import { styles } from "./style";
 import { theme } from "../../global/styles/theme";
+
+
 type  backgroundProps = {
     children: ReactNode
 }

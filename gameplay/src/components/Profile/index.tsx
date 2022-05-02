@@ -1,7 +1,8 @@
 import React from "react";
 import { Text, View } from "react-native";
-import { Avatar } from "../Atavar";
+
 import { styles } from "./stye";
+import { Avatar } from "../Atavar";
 
 export function Profile(){
     return(
