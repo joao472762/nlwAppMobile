@@ -1,4 +1,4 @@
-
+import React from "react";
 import { useNavigation } from "@react-navigation/native";
 import { Text, View, Image, StatusBar} from "react-native"
 ;

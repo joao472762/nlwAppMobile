@@ -7,7 +7,7 @@ import { theme } from '../global/styles/theme';
 import { propsNavegationStack } from './models';
 
 const {Navigator,Screen} = createStackNavigator<propsNavegationStack>();
-
+ 
 const {secondary90} = theme.colors
 export function AuthRoutes(){
     return(

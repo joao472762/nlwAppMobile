@@ -11,5 +11,8 @@ export const styles = StyleSheet.create({
         flexDirection: 'row',
         paddingHorizontal: 24,
         justifyContent: 'space-between'
+    },
+    content: {
+        marginTop: 42
     }
 })

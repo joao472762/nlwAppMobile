@@ -3,19 +3,21 @@ import { ScrollView } from "react-native";
 
 import { Category } from "../Category";
 import { categories } from "../../utils";
+import { styles } from "./style";
 
 type categorySelectProps = {
-    categorySelected?: string
+    categorySelected: string,
+    setCategory: (categoryId: string) => void,
 }
 
-export function CategorySelect({categorySelected}: categorySelectProps){
+export function CategorySelect({setCategory,categorySelected}: categorySelectProps){
  
-    
     return(
         <ScrollView
+        style={styles.container}
         horizontal
         showsHorizontalScrollIndicator = {false}
-        contentContainerStyle={{paddingLeft:10}}
+        contentContainerStyle={{paddingRight: 40}}
         
         >
             {
@@ -24,7 +26,8 @@ export function CategorySelect({categorySelected}: categorySelectProps){
                     key = {category.id}
                     title= {category.title}
                     icon = {category.icon}
-                    
+                    checked = {category.id === categorySelected}
+                    onPress= {() => setCategory(category.id)}
                     />
                     
                 ))
