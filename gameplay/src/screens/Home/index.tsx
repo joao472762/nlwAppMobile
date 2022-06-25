@@ -6,7 +6,6 @@ import { Profile } from "../../components/Profile";
 import { ButtonAdd } from "../../components/ButtonAdd";
 import { CategorySelect } from "../../components/CategorySelect";
 import { ListHeader } from "../../components/ListHeader";
-import { Inter_500Medium } from "@expo-google-fonts/inter";
 
 export function Home(){
     const [category, setCategory] = useState('')

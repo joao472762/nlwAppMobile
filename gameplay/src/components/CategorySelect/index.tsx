@@ -16,6 +16,7 @@ export function CategorySelect({setCategory,categorySelected}: categorySelectPro
         <ScrollView
         style={styles.container}
         horizontal
+        collapsable = {true}
         showsHorizontalScrollIndicator = {false}
         contentContainerStyle={{paddingRight: 40}}
         
